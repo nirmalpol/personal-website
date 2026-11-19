@@ -1,0 +1,275 @@
+.pageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem;
+}
+
+/* Header Section - Full Width */
+.headerSection {
+  margin-bottom: 1.5rem;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.pageDescription {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Activity Selector */
+.activitySelector {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.activityCard {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.activityCard:hover {
+  border-color: var(--accent-primary);
+  color: var(--text-primary);
+}
+
+.activityCard.active {
+  border-color: var(--accent-primary);
+  background: var(--accent-primary);
+  color: white;
+}
+
+/* Main Layout */
+.mainLayout {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .mainLayout {
+    grid-template-columns: 1fr 300px;
+    align-items: start;
+  }
+}
+
+/* Canvas Container */
+.canvasContainer {
+  position: relative;
+  background: #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 350px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.canvasContainer canvas {
+  display: block;
+}
+
+/* Controls Panel */
+.controlsPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  height: 350px;
+}
+
+.controlsPanel > *:last-child {
+  margin-top: auto;
+}
+
+.controlCard {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.controlCard h3 {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-tertiary);
+  margin-bottom: 0.5rem;
+}
+
+/* Pill Buttons */
+.pillGroup {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.pill {
+  padding: 0.35rem 0.75rem;
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.pill:hover {
+  border-color: var(--accent-primary);
+}
+
+.pill.active {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: white;
+}
+
+/* Specs Table */
+.specsTable {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.specsTable tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.specsTable tr:last-child {
+  border-bottom: none;
+}
+
+.specsTable td:first-child {
+  color: var(--text-secondary);
+}
+
+.specsTable td:last-child {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* Size Helper Image - Fixed size for consistency */
+.sizeHelper {
+  margin-top: 0.5rem;
+  text-align: center;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sizeHelper img {
+  width: 160px;
+  height: auto;
+  max-height: 130px;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+/* Download Button */
+.downloadButton {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.downloadButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Bottom Info Section */
+.bottomInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.infoCard {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.infoCard h3 {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-tertiary);
+  margin-bottom: 0.5rem;
+}
+
+/* Materials Grid */
+.materialsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+}
+
+.materialItem {
+  text-align: center;
+  padding: 0.4rem;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+}
+
+.materialItem .name {
+  font-size: 0.65rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+}
+
+.materialItem .value {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+@media (max-width: 600px) {
+  .bottomInfo {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .materialsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .materialsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .canvasContainer, .controlsPanel {
+      height: 280px;
+  }
+}

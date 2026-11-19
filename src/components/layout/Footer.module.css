@@ -1,0 +1,34 @@
+.footer {
+  padding: 26px 0;
+  border-top: 1px solid var(--border-light);
+  margin-top: auto;
+}
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+.socials {
+  display: flex;
+  gap: 22px;
+}
+.socials a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 680px) {
+  .container {
+    padding: 0 22px;
+    align-items: start;
+    flex-direction: column;
+  }
+  .container p span {
+    display: block;
+    margin-top: 5px;
+  }
+}

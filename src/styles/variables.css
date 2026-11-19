@@ -1,0 +1,16 @@
+:root {
+  --bg-primary: #f8f7f3;
+  --bg-secondary: #efeee8;
+  --bg-tertiary: #e6e6df;
+  --text-primary: #202c35;
+  --text-secondary: #56616a;
+  --text-tertiary: #65707a;
+  --accent-primary: #245b7a;
+  --accent-secondary: #347699;
+  --accent-light: #e7eef1;
+  --border-light: #d7d9d5;
+  --border-color: var(--border-light);
+  --card-bg: var(--bg-primary);
+  --primary-color: var(--accent-primary);
+  --nav-height: 76px;
+}
